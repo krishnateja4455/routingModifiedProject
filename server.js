@@ -13,6 +13,10 @@ app.get("/",(req,res)=>{
   res.send("Home Page");
 });
 
+app.get("/details",(req,res)=>{
+  res.send("Details Page");
+})
+
 app.listen(port,()=>{
   console.log(`Server Running on Port ${port}`);
 });
